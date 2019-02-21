@@ -11,17 +11,24 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM.
 ********************************
 
 * **Installed Virtual Box**
-VirtualBox 6.0.4
+   
+   VirtualBox 6.0.4
 * **Installed Vagrant**
-`$ vagrant -v`
-`Vagrant 2.2.3`
+   
+   `$ vagrant -v`
+   
+   `Vagrant 2.2.3`
 * **Download the VM configuration**
-option 1: download and unzip this file: [FSND-Virtual-Machine.zip](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip) 
-option 2: use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
+
+   option 1: download and unzip this file: [FSND-Virtual-Machine.zip](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip) 
+   
+   option 2: use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
 * **Start the virtual machine**
-`$ vagrant up`
+
+   `$ vagrant up`
 * **log in to newly installed Linux VM**
-`$ vagrant ssh`
+
+  `$ vagrant ssh`
 
 ### Design of the code and how to run it
 
@@ -37,6 +44,6 @@ The reporting tool answers the three questions. Each one of these questions is a
 `create view log_total as`
 `select time::DATE, count(*) as total from log group by time::DATE;`
 
-***how to run the code***
+***How to run the code***
 
 `vagrant@vagrant:/vagrant$ python news.py`
